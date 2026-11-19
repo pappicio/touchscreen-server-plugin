@@ -1,0 +1,10 @@
+{
+  "id": "touchscreen-server",
+  "name": "Touchscreen Server",
+  "version": "1.0.0",
+  "description": "Installs the touchscreen HTTP server and runs it through Script Runner.",
+  "scripts": {
+    "install": "install.sh",
+    "uninstall": "uninstall.sh"
+  }
+}
