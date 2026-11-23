@@ -1,10 +1,19 @@
+
 {
   "id": "touchscreen-server",
   "name": "Touchscreen Server",
-  "version": "1.0.1",
-  "description": "Installs the touchscreen HTTP server and runs it through Script Runner.",
+  "version": "1.1.0",
+  "description": "Provides an HTTP server for remote touchscreen interaction with GrumpyScreen.",
+  "startup": [
+    {
+      "name": "touchscreen-server",
+      "exec": "scripts/touchscreen-server.sh",
+      "type": "service"
+    }
+  ],
   "scripts": {
     "install": "install.sh",
+    "update": "update.sh",
     "uninstall": "uninstall.sh"
   }
 }
