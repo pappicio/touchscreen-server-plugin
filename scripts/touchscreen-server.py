@@ -1,3 +1,7 @@
+
+# OC_RUNNER: persistent
+
+
 import atexit
 import fcntl
 import http.server
@@ -7,6 +11,8 @@ import socketserver
 import struct
 import time
 from urllib.parse import urlparse, parse_qs
+
+
 
 PID_FILE = "/tmp/oc-touchscreen-server.pid"
 
